@@ -1,5 +1,3 @@
-# service
-
-Smara Web Dev
+# Smara Web Dev
 
 Cokorda Smara Web Apps Service
