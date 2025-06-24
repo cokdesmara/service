@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemberitahuan Expired</title>
+  <style>
+    :root {
+      --green-light: #d4f7dc;
+      --green-dark: #2e7d32;
+      --white: #ffffff;
+      --gray: #666666;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--green-light);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .notification-container {
+      background-color: var(--white);
+      border: 2px solid var(--green-dark);
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .notification-container h1 {
+      color: var(--green-dark);
+      margin-bottom: 10px;
+    }
+
+    .notification-container p {
+      color: var(--gray);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .button-refresh {
+      margin-top: 20px;
+      background-color: var(--green-dark);
+      color: var(--white);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-refresh:hover {
+      background-color: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+  <div class="notification-container">
+    <h1>Halaman Kedaluwarsa</h1>
+    <p>Maaf, sesi Anda telah berakhir atau halaman ini sudah tidak berlaku lagi.</p>
+    <p>Silakan muat ulang atau kembali ke halaman utama.</p>
+    <button class="button-refresh" onclick="location.reload();">Muat Ulang</button>
+  </div>
+</body>
+</html>
