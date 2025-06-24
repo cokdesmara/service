@@ -2,18 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Website Subscription Expired</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smara Web Dev</title>
   <style>
-    :root {
-      --green-light: #e6f4ea;
-      --green-primary: #388e3c;
-      --green-dark: #256029;
-      --gray-text: #444;
-      --white: #ffffff;
-      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
     * {
       margin: 0;
       padding: 0;
@@ -21,112 +12,158 @@
     }
 
     body {
-      background-color: var(--green-light);
-      font-family: var(--font-main);
-      color: var(--gray-text);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    .notice-container {
-      background-color: var(--white);
-      padding: 40px 50px;
-      max-width: 650px;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-      border-left: 6px solid var(--green-primary);
-      text-align: center;
-      animation: fadeIn 0.6s ease-in-out;
-    }
-
-    .notice-container h1 {
-      color: var(--green-dark);
-      font-size: 26px;
-      margin-bottom: 16px;
-    }
-
-    .notice-container p {
-      font-size: 16px;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
       line-height: 1.6;
-      color: var(--gray-text);
     }
 
-    .developer-contact {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: var(--green-primary);
-      color: var(--white);
+    .container {
+      width: 90%;
+      max-width: 960px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    header {
+      background: #1abc9c;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1abc9c;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: -30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #1abc9c;
+    }
+
+    .profile-info h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    .profile-info p {
+      margin-bottom: 5px;
+    }
+
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    #contact {
+      margin-top: 40px;
+    }
+
+    .contact-info li {
+      margin: 10px 0;
+      list-style: none;
+    }
+
+    .contact-info a {
+      color: #1abc9c;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: 500;
-      transition: background-color 0.3s ease;
-    }
-
-    .developer-contact:hover {
-      background-color: var(--green-dark);
     }
 
     footer {
-      margin-top: 30px;
+      background: #2c3e50;
+      color: white;
       text-align: center;
-      font-size: 14px;
-      color: #666;
-    }
-
-    .social-links {
-      margin-top: 10px;
-    }
-
-    .social-links a {
-      margin: 0 8px;
-      color: var(--green-primary);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .social-links a:hover {
-      color: var(--green-dark);
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 600px) {
-      .notice-container {
-        padding: 30px 20px;
-      }
-
-      .notice-container h1 {
-        font-size: 22px;
-      }
+      padding: 20px 0;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="notice-container">
-    <h1>Website Subscription Expired</h1>
-    <p>
-      This website is currently inactive as its subscription period has expired.<br>
-      For further information, please contact the developer.
-    </p>
-    <a href="https://wa.me/6281916722619" class="developer-contact" target="_blank">Contact Developer</a>
+  <header>
+    <div class="container">
+      <h1>Smara Web Dev</h1>
+      <p>Professional Web Apps Developer</p>
+    </div>
+  </header>
 
-    <footer>
-      <div class="social-links">
-        <a href="mailto:cokorda.smara@gmail.com" target="_blank">Email</a>
-        <a href="https://facebook.com/cokorda.smara" target="_blank">Facebook</a>
-        <a href="https://instagram.com/cokdesmara" target="_blank">Instagram</a>
+  <section class="container profile">
+    <img src="/profile-photo.png" alt="Developer Photo" />
+    <div class="profile-info">
+      <h3>Cokorda Smara</h3>
+      <p>I'm a passionate web developer with a strong interest in building dynamic and responsive websites. I specialize in HTML, CSS, JavaScript, and modern web frameworks.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>Web Application</h3>
+          <p>Web applications built with modern web frameworks to suit your needs.</p>
+        </div>
+        <div class="project">
+          <h3>Company Profile Website</h3>
+          <p>Responsive corporate website designed with Bootstrap and custom CSS.</p>
+        </div>
+        <div class="project">
+          <h3>Portfolio Website</h3>
+          <p>A personal branding site showcasing professional work and skills.</p>
+        </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you're interested in working together, feel free to reach out!</p>
+      <ul class="contact-info">
+        <li>Email: <a href="mailto:cokorda.smara@gmail.com" target="_blank">cokorda.smara@gmail.com</a></li>
+        <li>WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">+62 819-1672-2619</a></li>
+        <li>Facebook: <a href="https://facebook.com/cokorda.smara" target="_blank">cokorda.smara</a></li>
+        <li>Instagram: <a href="https://instagram.com/cokdesmara" target="_blank">cokdesmara</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Smara Web Dev. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
