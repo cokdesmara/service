@@ -1,9 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Subscription Expired</title>
+  <style>
+    :root {
+      --green-light: #e6f4ea;
+      --green-primary: #388e3c;
+      --green-dark: #256029;
+      --gray-text: #444;
+      --white: #ffffff;
+      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--green-light);
+      font-family: var(--font-main);
+      color: var(--gray-text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .notice-container {
+      background-color: var(--white);
+      padding: 40px 50px;
+      max-width: 650px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      border-left: 6px solid var(--green-primary);
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .notice-container h1 {
+      color: var(--green-dark);
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+
+    .notice-container p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--gray-text);
+    }
+
+    .developer-contact {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: var(--green-primary);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .developer-contact:hover {
+      background-color: var(--green-dark);
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .social-links {
+      margin-top: 10px;
+    }
+
+    .social-links a {
+      margin: 0 8px;
+      color: var(--green-primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: var(--green-dark);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .notice-container {
+        padding: 30px 20px;
+      }
+
+      .notice-container h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
 </head>
 <body>
-tes
+  <div class="notice-container">
+    <h1>Website Subscription Expired</h1>
+    <p>
+      This website is currently inactive as its subscription period has expired.<br>
+      For further information, please contact the developer.
+    </p>
+    <a href="https://wa.me/6281916722619" class="developer-contact" target="_blank">Contact Developer</a>
+
+    <footer>
+      <div class="social-links">
+        <a href="mailto:cokorda.smara@gmail.com" target="_blank">Email</a>
+        <a href="https://facebook.com/cokorda.smara" target="_blank">Facebook</a>
+        <a href="https://instagram.com/cokdesmara" target="_blank">Instagram</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
