@@ -9,6 +9,11 @@
             "name": "Aerofood Overcost Control System",
             "company": "PT Aerofood Indonesia",
             "validate": "2025-06-23 23:00:00"
+        },
+        {
+            "name": "E-Training Portal",
+            "company": "PT Aerofood Indonesia",
+            "validate": "2025-06-23 23:00:00"
         }
     ]
 }
