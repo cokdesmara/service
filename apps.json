@@ -6,7 +6,7 @@
             "name": "Customer Voice Online",
             "company": "PT. Aerofood Indonesia",
             "release": "2024-10-01 00:00:00",
-            "validate": "2025-06-27 11:50:58"
+            "validate": "2025-06-27 00:00:08"
         },
         {
             "id": "2",
@@ -14,7 +14,7 @@
             "name": "Aerofood Overcost Control System",
             "company": "PT. Aerofood Indonesia",
             "release": "2015-06-23 00:00:00",
-            "validate": "2025-06-23 23:00:00"
+            "validate": "2025-06-23 00:00:00"
         },
         {
             "id": "3",
@@ -22,7 +22,7 @@
             "name": "E-Training Portal",
             "company": "PT. Aerofood Indonesia",
             "release": "2016-04-10 00:00:00",
-            "validate": "2025-06-23 23:00:00"
+            "validate": "2025-06-23 00:00:00"
         }
     ]
 }
